@@ -59,7 +59,7 @@ Check if the container is running
 ```docker
 docker ps
 ```
-Agora verifique em qual endereço IP o container está sendo utilizado
+Now check which IP address the container is being used on
 ```docker
 docker inspect id_container | grep IPAddress
 ```
