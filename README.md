@@ -45,8 +45,7 @@ To execute this project you will need the following tools:
 
 
 ## Running
-Considering that you already have all the tools installed on your Linux Kernel based operating system. Abra o seu terminal linux e execute os seguintes passos:
-
+Considering that you already have all the tools installed on your Linux Kernel based operating system. Open your Linux terminal and perform the following steps:
 Pull the image from the latest version of MariaDB
 ```docker
 docker pull mariadb
