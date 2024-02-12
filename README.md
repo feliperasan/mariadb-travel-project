@@ -1,8 +1,17 @@
 # SQL Travel Project
+
 <div align="center">
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+ 
+ ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+ ![Dbeaver](https://img.shields.io/badge/Dbeaver-FFF?style=for-the-badge&logo=dbeaver&logoColor=000)
+ ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
+ ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
+
+ <img src="https://github.com/feliperasan/mariadb-travel-project/assets/32422863/2a1f9f09-967d-42f0-9152-0277541f0ea5" width="180"/>
+ 
 </div>
+
+
 
 
 The project consists of presenting my skills with the **SQL** language, together with Entity and Relationship Diagram, using the **MariaDB** Database Management System (DBMS) together with the **Dbeaver** database administrator and the use of virtualization of the DBMS with **Docker** containers.
@@ -18,7 +27,12 @@ The project consists of presenting my skills with the **SQL** language, together
 
 
 ## Entity Relationship Diagram
-![QuickDBD-export](https://github.com/feliperasan/sql-travel-project/assets/32422863/bcc1d91f-6e27-4fc3-807f-f0c72e7669f6)
+<div align="center">
+ 
+ [![](https://mermaid.ink/img/pako:eNqlUt9PwjAQ_leae5JkI1vXwdZnZmKIxoCaaJaQulZpYC3pOiOO_e-WDYKIb_bpu_vux3fXa6DQXAAFYSaSvRtW5gq59zjPZmi3833doFnmjKcMUVSylah-BDQ93j-pLJIc3U9Prg9miiUzVziOB0ixUlxSYRAMkCiZXJ-4CbMCvUpjlwvu4GVS7HIY50ZUBy1trnpwVNpq39_t0CSbP9zcPTvha6lW1XnMhfZzu66EWbiBrqfnfi4qK9X2N9WJ_ltuN35lma1PclGPjgL_vceOctIKIzdW6sM6WvCgFMatl7sf7prkYJfCVQDqIGdmlUOu9nGstnq-VQVQa2rhQb3ZT3O4CaBvbF0574YpoA18AiUkHSbjOAmDMcGYJKEHW6AhHgajCEeYhFFEYhKR1oMvrV2FYJimOB2RKBmlJAgCTLpyLx3Z9xRcWm1u-4Ps7rL9Br4XwDc?type=png)](https://mermaid.live/edit#pako:eNqlUt9PwjAQ_leae5JkI1vXwdZnZmKIxoCaaJaQulZpYC3pOiOO_e-WDYKIb_bpu_vux3fXa6DQXAAFYSaSvRtW5gq59zjPZmi3833doFnmjKcMUVSylah-BDQ93j-pLJIc3U9Prg9miiUzVziOB0ixUlxSYRAMkCiZXJ-4CbMCvUpjlwvu4GVS7HIY50ZUBy1trnpwVNpq39_t0CSbP9zcPTvha6lW1XnMhfZzu66EWbiBrqfnfi4qK9X2N9WJ_ltuN35lma1PclGPjgL_vceOctIKIzdW6sM6WvCgFMatl7sf7prkYJfCVQDqIGdmlUOu9nGstnq-VQVQa2rhQb3ZT3O4CaBvbF0574YpoA18AiUkHSbjOAmDMcGYJKEHW6AhHgajCEeYhFFEYhKR1oMvrV2FYJimOB2RKBmlJAgCTLpyLx3Z9xRcWm1u-4Ps7rL9Br4XwDc)
+ 
+</div>
+
 
 ## Requirements
 
