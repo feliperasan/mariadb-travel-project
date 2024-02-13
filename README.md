@@ -1,13 +1,13 @@
 # SQL Travel Project
 
 <div align="center">
- 
+
+ <img src="https://github.com/feliperasan/mariadb-travel-project/assets/32422863/55e1ba5e-26ef-45da-b4e9-f5fcb720e3e1" width="300"/>
+
  ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
  ![Dbeaver](https://img.shields.io/badge/Dbeaver-FFF?style=for-the-badge&logo=dbeaver&logoColor=000)
  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
-
- <img src="https://github.com/feliperasan/mariadb-travel-project/assets/32422863/55e1ba5e-26ef-45da-b4e9-f5fcb720e3e1" width="300"/>
  
 </div>
 
