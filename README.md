@@ -7,7 +7,7 @@
  ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
 
- <img src="https://github.com/feliperasan/mariadb-travel-project/assets/32422863/2a1f9f09-967d-42f0-9152-0277541f0ea5" width="180"/>
+ <img src="https://github.com/feliperasan/mariadb-travel-project/assets/32422863/55e1ba5e-26ef-45da-b4e9-f5fcb720e3e1" width="300"/>
  
 </div>
 
