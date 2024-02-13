@@ -1,3 +1,5 @@
+CREATE DATABASE trips;
+
 USE trips;
 
 CREATE TABLE users (
@@ -96,4 +98,46 @@ DROP TABLE users;
 
 /* ALTER TABLE */
 ALTER TABLE new_users RENAME users;
+
+ALTER TABLE users MODIFY COLUMN address VARCHAR(150);
+
+/* PRIMARY KEY AND AUTO_INCREMENT */
+ALTER TABLE users 
+MODIFY COLUMN id INT AUTO_INCREMENT, 
+ADD PRIMARY KEY (id);
+
+ALTER TABLE destinations
+MODIFY COLUMN id INT AUTO_INCREMENT,
+ADD PRIMARY KEY (id);
+
+ALTER TABLE reservations
+MODIFY COLUMN id INT AUTO_INCREMENT,
+ADD PRIMARY KEY (id);
+
+
+/* FOREIGN KEY */
+ALTER TABLE reservations
+ADD CONSTRAINT fk_reservations_users
+FOREIGN KEY (user_id) REFERENCES users(id);
+
+ALTER TABLE reservations
+ADD CONSTRAINT fk_reservations_destinations
+FOREIGN KEY (destination_id) REFERENCES destinations(id);
+
+
+/* CREATE */
+INSERT INTO reservations (user_id, destination_id, date) VALUES (12, 12, "2023-11-11"); /* ERROR */
+INSERT INTO reservations (user_id, destination_id, date) VALUES (1, 1, "2023-11-11");
+
+
+/* CASCADE EXCLUSION */
+ALTER TABLE reservations 
+ADD CONSTRAINT fk_users
+FOREIGN KEY (user_id) REFERENCES users (id)
+ON DELETE CASCADE;
+
+ALTER TABLE reservations DROP CONSTRAINT fk_reservations_users;
+
+DELETE FROM users
+WHERE id = 1;
 
