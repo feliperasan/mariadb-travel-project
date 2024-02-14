@@ -35,6 +35,7 @@ INSERT INTO users (id, name, email, address, date_of_birth) VALUES (7, "João", 
 INSERT INTO users (id, name, email, address, date_of_birth) VALUES (8, "Carla", "carla@email.com", "Rua das Rosas, 40 - Neighborhood L/PR", "1989-06-25");
 INSERT INTO users (id, name, email, address, date_of_birth) VALUES (9, "Paulo", "paulo@email.com", "Travessa dos Girassóis, 25 - Neighborhood M/SC", "1980-11-08");
 INSERT INTO users (id, name, email, address, date_of_birth) VALUES (10, "Mariana", "mariana@email.com", "Av. das Margaridas, 60 - Neighborhood N/RS", "1975-02-14");
+INSERT INTO users (name, email, address, date_of_birth) VALUES ("SomeUser", "SomeUser@email.com", "Av. das Arvores, 1200 - Neighborhood X/SP", "1990-10-05");
 
 INSERT INTO destinations (id, name, description) VALUES (1, "Mosqueiro Beach", "A cool place to hang out!");
 INSERT INTO destinations (id, name, description) VALUES (2, "Serra do Cipó", "A beautiful mountainous region to explore nature!");
@@ -57,6 +58,7 @@ INSERT INTO reservations (id, user_id, destination_id, date, status) VALUES (7, 
 INSERT INTO reservations (id, user_id, destination_id, date, status) VALUES (8, 8, 8, "2024-06-18", "confirmed");
 INSERT INTO reservations (id, user_id, destination_id, date, status) VALUES (9, 9, 9, "2024-05-22", "pending");
 INSERT INTO reservations (id, user_id, destination_id, date, status) VALUES (10, 10, 10, "2024-04-10", "confirmed");
+INSERT INTO reservations (user_id, destination_id) VALUES (1, 3);
 
 
 /* READ */
@@ -162,4 +164,24 @@ SELECT * FROM users
 WHERE id NOT IN (SELECT user_id  FROM reservations);
 
 SELECT name, (SELECT COUNT(*) FROM reservations WHERE user_id = users.id) AS total_reservations FROM users;
+
+
+/* AGGREGATE FUNCTIONS */
+SELECT COUNT(*) AS total_users FROM users us
+INNER JOIN reservations rs ON us.id = rs.user_id;
+
+SELECT MAX(TIMESTAMPDIFF(YEAR, date_of_birth, CURRENT_DATE)) AS older_age FROM users;
+
+/* GROUP BY */
+SELECT COUNT(*), destination_id  FROM reservations
+GROUP BY destination_id;
+
+/* ORDERING RESULTS WITH ORDER BY */
+SELECT COUNT(*) AS quant_reservations, destination_id  FROM reservations
+GROUP BY destination_id ORDER BY quant_reservations DESC, destination_id DESC;
+
+
+EXPLAIN SELECT * FROM users WHERE email = "ana@email.com";
+EXPLAIN SELECT * FROM users WHERE name = "Ana";
+CREATE INDEX idx_name ON users (name); -- ADD INDEX IN NAME COLUMN
 
