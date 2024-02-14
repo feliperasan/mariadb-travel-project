@@ -141,3 +141,25 @@ ALTER TABLE reservations DROP CONSTRAINT fk_reservations_users;
 DELETE FROM users
 WHERE id = 1;
 
+/* INNER JOIN */
+SELECT * FROM users us 
+INNER JOIN reservations rs ON us.id = rs.user_id
+INNER JOIN destinations ds ON rs.destination_id = ds.id;
+
+/* LEFT JOIN */
+SELECT * FROM users us 
+LEFT JOIN reservations rs ON us.id = rs.user_id;
+
+/* RIGHT JOIN */
+SELECT * FROM users us 
+RIGHT JOIN reservations rs ON us.id = rs.user_id;
+
+/* SUB QUERY */
+SELECT * FROM destinations
+WHERE id NOT IN (SELECT destination_id FROM reservations);
+
+SELECT * FROM users
+WHERE id NOT IN (SELECT user_id  FROM reservations);
+
+SELECT name, (SELECT COUNT(*) FROM reservations WHERE user_id = users.id) AS total_reservations FROM users;
+
